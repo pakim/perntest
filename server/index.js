@@ -5,13 +5,11 @@ import pg from "pg";
 import session from "express-session";
 import passport from "passport";
 import { Strategy } from "passport-local";
-// import cors from "cors";
 
 const app = express();
 const port = 3000;
 const salt = 10;
 
-// app.use(cors());
 
 // Postgres database setup
 const db = new pg.Client({
